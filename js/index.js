@@ -1,7 +1,4 @@
-function musica(){
-    let musica = new Audio('../audios/choose.mp3')
-    musica.play();
-}
+
 function scorpion(){
     document.getElementById('escolhido').src = '../img/personagens/scorpion/escolhido1.gif';
     document.getElementById('escolhido').style.transform = 'scale(1.3)';
