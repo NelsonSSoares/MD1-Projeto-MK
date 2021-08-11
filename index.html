@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+</head>
+<body onload="musica()">
+    <header id="hd-container">
+        <div id="logo">
+            <a href="#"><img src="img/logo/logo.gif" alt="logo-mk"></a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="titulo-principal">Escolha Seu Lutador!</h1>
+        </div>
+        <section id="principal-container">
+            <div id="scorpion">
+                <h3 class="select-person">1 - Scorpion</h3>
+                <button onclick="scorpion()"><img id="escolhido"src="img/personagens/scorpion/fighter.gif" alt="Scorpion"></button>
+            </div>
+            <div id="subzero">
+                <h3 class="select-person">2 - Sub-Zero</h3>
+                <button onclick="subzero()"><img id="escolhido2" src="img/personagens/subzero/fighter2.gif" alt="Sub-Zero"></button>
+            </div>
+            <div id="ermac">
+                <h3 class="select-person">3 - Ermac</h3>
+                <button onclick="ermac()"><img id="escolhido3" src="img/personagens/ermac/fighter3.gif" alt="Ermac"></button>
+            </div>
+        </section> 
+    </main>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>
