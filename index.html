@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css" type="text/css">
 
 </head>
-<body onload="musica()">
+<body >
     
     <header id="hd-container">
         <div id="logo">
@@ -18,7 +18,7 @@
     </header>
     
     <main>
-        <audio src="audios/choose.mp3" autoplay loop></audio>
+        
         <div>
             <h1 class="titulo-principal">Escolha Seu Lutador!</h1>
         </div>
@@ -35,9 +35,12 @@
                 <h3 class="select-person">3 - Ermac</h3>
                 <button onclick="ermac()"><img id="escolhido3" src="img/personagens/ermac/fighter3.gif" alt="Ermac"></button>
             </div>
+            <audio src="audios/choose.mp3" autoplay loop></audio>
+            
         </section> 
     </main>
 
     <script src="js/index.js" defer></script>
+    
 </body>
 </html>
