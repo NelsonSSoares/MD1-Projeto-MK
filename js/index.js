@@ -6,6 +6,8 @@
 }
 */
 function iniciar(){
+    const destiny = new Audio('audios/system/destiny.mp3');
+    destiny.play();
     document.getElementById('test').innerHTML=''
     document.getElementById('test').innerHTML= ` 
 <div>
@@ -28,9 +30,8 @@ function iniciar(){
     <audio src="audios/choose.mp3" autoplay loop></audio>
     
 </section> `
-
-
 }
+
 function scorpion(){
     document.getElementById('escolhido').src = 'img/personagens/scorpion/escolhido1.gif';
     document.getElementById('escolhido').style.transform = 'scale(1.4)';
