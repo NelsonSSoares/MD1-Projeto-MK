@@ -13,11 +13,15 @@ button{
 }
 #hd-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 #logo{
     flex-shrink: 1;
+    
 }
+
 #principal-container{
     display: flex;
     justify-content: center;
