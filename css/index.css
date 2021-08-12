@@ -21,7 +21,22 @@ button{
     flex-shrink: 1;
     
 }
-
+#inicio{
+    margin-top: 15%;
+    width: 30%;
+    height: 30PX;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 1s all;
+    background-color: darkred;
+    color: white;
+    
+}
+#inicio:hover{
+    transform: scale(1.2);
+    color: red;
+    background-color: black;
+}
 #principal-container{
     display: flex;
     justify-content: center;
