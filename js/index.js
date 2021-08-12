@@ -15,15 +15,15 @@ function iniciar(){
 <section id="principal-container">
     <div id="scorpion">
         <h3 class="select-person">1 - Scorpion</h3>
-        <button onclick="scorpion()"><img id="escolhido"src="img/personagens/scorpion/fighter.gif" alt="Scorpion"></button>
+        <button onclick="scorpion()" onmouseover="hover()"><img id="escolhido"src="img/personagens/scorpion/fighter.gif" alt="Scorpion"></button>
     </div>
     <div id="subzero">
         <h3 class="select-person">2 - Sub-Zero</h3>
-        <button onclick="subzero()"><img id="escolhido2" src="img/personagens/subzero/fighter2.gif" alt="Sub-Zero"></button>
+        <button onclick="subzero()" onmouseover="hover()"><img id="escolhido2" src="img/personagens/subzero/fighter2.gif" alt="Sub-Zero"></button>
     </div>
     <div id="ermac">
         <h3 class="select-person">3 - Ermac</h3>
-        <button onclick="ermac()"><img id="escolhido3" src="img/personagens/ermac/fighter3.gif" alt="Ermac"></button>
+        <button onclick="ermac()" onmouseover="hover()"><img id="escolhido3" src="img/personagens/ermac/fighter3.gif" alt="Ermac"></button>
     </div>
     <audio src="audios/choose.mp3" autoplay loop></audio>
     
@@ -36,6 +36,8 @@ function scorpion(){
     document.getElementById('escolhido').style.transform = 'scale(1.4)';
     let scorpion = document.getElementById('escolhido');
     scorpion.style.paddingBottom = '13px';
+    const audio = new Audio('audios/scorpion/nome/nome.mp3');
+    audio.play();
 }
 
 function subzero(){
@@ -43,6 +45,8 @@ function subzero(){
     let subzero = document.getElementById('escolhido2');
     subzero.style.paddingBottom = '30px';
     document.getElementById('escolhido2').style.transform = 'scale(1.5)';
+    const audio = new Audio('audios/subzero/nome/nome.mp3');
+    audio.play();
 }
 
 function ermac(){
@@ -51,4 +55,10 @@ function ermac(){
     ermac.style.paddingLeft = '18px';
     ermac.style.paddingBottom = '40px';
     document.getElementById('escolhido3').style.transform = 'scale(1.5)';
+    const audio = new Audio('audios/ermac/nome/nome.mp3');
+    audio.play();
+}
+function hover(){
+    const hover = new Audio('audios/system/hover/hover.mp3');
+    hover.play();
 }
