@@ -36,6 +36,7 @@ button{
     transform: scale(1.2);
     color: red;
     background-color: black;
+    border: 2px solid red;
 }
 #principal-container{
     display: flex;

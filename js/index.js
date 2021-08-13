@@ -8,6 +8,8 @@
 function iniciar(){
     const destiny = new Audio('audios/system/destiny.mp3');
     destiny.play();
+    const musica = new Audio('audios/choose.mp3');
+   
     document.getElementById('test').innerHTML=''
     document.getElementById('test').innerHTML= ` 
 <div>
@@ -27,9 +29,13 @@ function iniciar(){
         <h3 class="select-person">3 - Ermac</h3>
         <button onclick="ermac()" onmouseover="hover()"><img id="escolhido3" src="img/personagens/ermac/fighter3.gif" alt="Ermac"></button>
     </div>
-    <audio src="audios/choose.mp3" autoplay loop></audio>
+    <!--<audio src="audios/choose.mp3" autoplay loop></audio>-->
     
 </section> `
+    musica = setTimeout(() => {
+        musica.play();
+        musica.loop = true;
+    },  0400);
 }
 
 function scorpion(){
