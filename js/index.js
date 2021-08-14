@@ -45,13 +45,16 @@ function scorpion(){
     scorpion.style.paddingBottom = '13px';
     const audio = new Audio('audios/scorpion/nome/nome.mp3');
     audio.play();
+    setTimeout(() => {
+        window.location = 'fases/scorpion.html'
+    }, 1000);
 }
 
 function subzero(){
     document.getElementById('escolhido2').src = 'img/personagens/subzero/escolhido2.gif';
     let subzero = document.getElementById('escolhido2');
     subzero.style.paddingBottom = '30px';
-    document.getElementById('escolhido2').style.transform = 'scale(1.5)';
+    document.getElementById('escolhido2').style.transform = 'scale(1.3)';
     const audio = new Audio('audios/subzero/nome/nome.mp3');
     audio.play();
 }
