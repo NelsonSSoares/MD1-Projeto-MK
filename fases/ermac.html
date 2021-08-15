@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ermac!</title>
+    <style>
+        body{
+            background-color: rgba(141, 3, 3, 0.863);
+            color: white;
+            background-image: url('kahnback3.png');
+            background-repeat: no-repeat;
+            margin: auto;
+            }
+        button{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 50%;
+        }
+        #historia{
+            border: 3px solid black;
+            text-align: center;
+            margin-top: 10%;
+            background-color: rgba(0, 0, 0, 0.678);
+            border-radius: 15px;
+            text-shadow: 1px 1px 2px black;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            
+        }
+        button{
+            border: 1px solid white;
+            color: white;
+            background-color: rgba(255, 255, 255, 0);
+            cursor: pointer;
+            height: 30px;
+            border-radius: 5px;
+            transition: 1s all;
+        }
+        button:hover{
+            border: 1px solid yellow;
+            color: yellow;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="historia">
+            <h1 style="color: red;">ERMAC!</h1>
+            <h4><p>
+                Apos o último torneio de Mortal Kombat com a derrota da Exoterra,<br>
+                Shao khan quer vingança e faz um pacto com o feiticeiro Quan chi, que tinha fabricado um amuleto com então recem-finlizado Shang tsung.<br>
+                O amuleto muito poderoso que continha todas as almas dos guerreiros ancestrais, e poderia trazer seus corpos de volta,<br>
+                podendo assim, criar um verdadeiro exercito zombie e totalmente obediente.<br>
+                em troca Shao Khan oferece o Reino do Submundo, ja que ambos precisam unir suas forças,<br>
+                para derrotar os guerreiros que não fecharão o pacto com Shao Khan e Quan Chi.<br>
+                <br>
+                Scorpion retorna ao submundo para planejar sua vingança contra o feiticeiro Quan Chi,<br>
+                e sente a sua energia aumentar estramentem depois do torneio<br>
+                A Familia e Klan de Scorpion, foi brutalmente assassinada.<br>
+                Quan chi é o assassino, porem usou o seu poder para manipular a mente de Scorpion,<br>
+                e colocou a culpa em Subzero, que depois do Mortal Kombat a verdade foi revelada por Raiden.<br>
+                Ermac o Mestre das Almas sentiu-se traido pelo acordo de Shao Kahn,<br>
+                e vem ao Submundo em busca de aliança..
+                </p>
+            </h4>
+
+                <button onclick="stage1()"><strong>Kombat!!</strong></button>
+
+        </div>
+    </main>
+    <script> 
+        function stage1(){
+            const done = new Audio('../audios/system/welldone.mp3');
+            done.play();
+            setTimeout(() => {
+        window.location = 'scorpion/stage1/stage1.html'
+    }, 1500);
+        }
+
+    </script>
+</body>
+</html>

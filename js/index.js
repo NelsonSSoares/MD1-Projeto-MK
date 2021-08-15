@@ -47,7 +47,7 @@ function scorpion(){
     audio.play();
     setTimeout(() => {
         window.location = 'fases/scorpion.html'
-    }, 1000);
+    }, 1500);
 }
 
 function subzero(){
@@ -57,6 +57,9 @@ function subzero(){
     document.getElementById('escolhido2').style.transform = 'scale(1.3)';
     const audio = new Audio('audios/subzero/nome/nome.mp3');
     audio.play();
+    setTimeout(() => {
+        window.location = 'fases/subzero.html'
+    }, 1500);
 }
 
 function ermac(){
@@ -67,8 +70,12 @@ function ermac(){
     document.getElementById('escolhido3').style.transform = 'scale(1.5)';
     const audio = new Audio('audios/ermac/nome/nome.mp3');
     audio.play();
+    setTimeout(() => {
+        window.location = 'fases/ermac.html'
+    }, 1500);
 }
 function hover(){
     const hover = new Audio('audios/system/hover/hover.mp3');
     hover.play();
+    
 }
