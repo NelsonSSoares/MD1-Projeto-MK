@@ -1,11 +1,39 @@
 body{
-    background-image: url('torre.png'); ;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: darkorange;
+    background: linear-gradient(gray, darkorange);
+   
+
 }
 
 #avatar{
     position: absolute;
-    top: 50px;
+    top: 347px;
+    left: 163px;
+    opacity: 0%;
+    animation-name: avatarscorp;
+    animation-duration: 6s;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+  
+}
+
+#cenario{
+    position: relative;
+   
+}
+
+
+
+@keyframes avatarscorp {
+    from{
+        position: absolute;
+        top: 347px;
+        left: 163px;
+        opacity: 0%;
+    }
+    to{
+      opacity: 100%;
+    }
 }

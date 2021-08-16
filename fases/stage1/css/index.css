@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#cenario{
+    margin-top: 20%;
+    position: relative;
+   
+}
+#background{
+    flex-shrink: 0;
+}
+
+#img-scorpion{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+}
+
