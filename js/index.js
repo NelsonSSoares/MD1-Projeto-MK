@@ -59,7 +59,7 @@ function subzero(){
     audio.play();
     setTimeout(() => {
         window.location = 'fases/subzero.html'
-    }, 1500);
+    }, 1000);
 }
 
 function ermac(){

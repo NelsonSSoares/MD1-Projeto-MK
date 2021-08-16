@@ -11,7 +11,7 @@
             color: white;
             background-image: url('kahnback3.png');
             background-repeat: no-repeat;
-            margin: auto;
+            background-size: 100%;
             }
         button{
             margin-top: 30px;
@@ -47,7 +47,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="historia()">
     <main>
         <div id="historia">
             <h1 style="color: red;">ERMAC!</h1>
@@ -73,6 +73,7 @@
 
         </div>
     </main>
+
     <script> 
         function stage1(){
             const done = new Audio('../audios/system/welldone.mp3');
@@ -83,5 +84,6 @@
         }
 
     </script>
+    <script src="index.js"></script>
 </body>
 </html>

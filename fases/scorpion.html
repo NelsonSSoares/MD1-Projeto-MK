@@ -11,6 +11,7 @@
             color: white;
             background-image: url('kahnback3.png');
             background-repeat: no-repeat;
+            background-size: 100%;
             
             }
         button{
@@ -45,9 +46,11 @@
             color: red;
             transform: scale(1.2);
         }
+        
     </style>
 </head>
-<body>
+<body onload="historia()">
+  
     <main>
         <div id="historia">
             <h1 style="color: yellow;">SCORPION!</h1>
@@ -78,10 +81,11 @@
             const done = new Audio('../audios/system/welldone.mp3');
             done.play();
             setTimeout(() => {
-        window.location = 'scorpion/stage1/stage1.html'
+        window.location = 'scorpion/stage1/torre.html'
     }, 1000);
         }
 
     </script>
+    <script src="index.js"></script>
 </body>
 </html>
