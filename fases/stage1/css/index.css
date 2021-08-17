@@ -22,6 +22,35 @@ main{
     height: 120px;
     position: absolute;
     top: 130px;
-    left: 300px;
+    left: 350px;
 }
+
+#img-ermac{
+    opacity: 0%;
+    width: 130px;
+    height: 165px;
+    position: absolute;
+    top: 90px;
+    right: 420px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: 1s all;
+}
+
+#img-subzero{
+    transition: 1s all;
+    opacity: 0%;
+    width: 100px;
+    height: 134px;
+    position: absolute;
+    top: 125px;
+    right: 340px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 
