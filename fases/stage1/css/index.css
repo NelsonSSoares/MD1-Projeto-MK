@@ -62,23 +62,10 @@ main{
     transition: 1s all;
 }
 
-.levitar{
-    animation-name: levitar;
-    animation-duration: 1.3s;
+.round1{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 70px;
+    left: 600px;
 }
-@keyframes levitar {
-    from{
-        top:130px;
-    }
-    to{
-        top: 80px;
-    }
-    to{
-
-        top: 80px;
-    }
-    to{
-        top: 130px;
-    }
-}
-

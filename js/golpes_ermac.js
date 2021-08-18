@@ -14,7 +14,12 @@ function levitar(){
     setTimeout(() => {
         ermac.style.top = '120px'
         ermac.style.transform = 'scale(1)';
-        document.getElementById('zombie').remove()
+        vidaZombie(100)
         return document.getElementById('img-ermac').src = '../../img/personagens/ermac/fighter3.gif';
     }, 1500);
+}
+
+function giratorio(){
+    document.getElementById('img-ermac').src = ''
+    const giratorio = new Audio('');
 }
