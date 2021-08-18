@@ -31,7 +31,7 @@ main{
     height: 165px;
     position: absolute;
     top: 90px;
-    right: 420px;
+    right: 340px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -46,11 +46,39 @@ main{
     height: 134px;
     position: absolute;
     top: 125px;
-    right: 340px;
+    right: 420px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+#zombie{
+    opacity: 0%;
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top: 130px;
+    right: 220px;
+    transition: 1s all;
+}
 
+.levitar{
+    animation-name: levitar;
+    animation-duration: 1.3s;
+}
+@keyframes levitar {
+    from{
+        top:130px;
+    }
+    to{
+        top: 80px;
+    }
+    to{
+
+        top: 80px;
+    }
+    to{
+        top: 130px;
+    }
+}
 

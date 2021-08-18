@@ -1,9 +1,9 @@
 function soco(){
     document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/soco.gif';
     let scorpion = document.getElementById('img-scorpion');
-    scorpion.style.transform = 'scale(1.5)'
+    scorpion.style.transform = 'scale(1.5)';
     setTimeout(() => {
-        scorpion.style.transform = 'scale(1)'
+        scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 1000);
 }
@@ -11,9 +11,9 @@ function soco(){
 function machadada(){
     document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/machadada.gif';
     let scorpion = document.getElementById('img-scorpion');
-    scorpion.style.transform = 'scale(1.8)'
+    scorpion.style.transform = 'scale(1.8)';
     setTimeout(() => {
-        scorpion.style.transform = 'scale(1)'
+        scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 1000);
 }
@@ -21,9 +21,9 @@ function machadada(){
 function joelhada(){
     document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/joelhada.gif';
     let scorpion = document.getElementById('img-scorpion');
-    scorpion.style.transform = 'scale(1.5)'
+    scorpion.style.transform = 'scale(1.5)';
     setTimeout(() => {
-        scorpion.style.transform = 'scale(1)'
+        scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 600);
 }
@@ -36,14 +36,14 @@ function comeHere(){
     if(result < 0.5){
         getoverhere.play();
     }else{
-        comehere.play()
+        comehere.play();
     }
 
     document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/comehere.gif';
     let scorpion = document.getElementById('img-scorpion');
-    scorpion.style.transform = 'scale(1.3)'
+    scorpion.style.transform = 'scale(1.3)';
     setTimeout(() => {
-        scorpion.style.transform = 'scale(1)'
+        scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 1800);
 }
