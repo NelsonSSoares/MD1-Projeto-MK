@@ -42,7 +42,7 @@ function batalha(){
         document.getElementById('img-subzero').style.transform = 'scaleX(1)';
         alert('Subzero: A invasão ja começou!');
         levitar()
-        alert('Scorpion: como ousa Ermac?\n do meu Reino cuido eu!!');
+        
     }, 1500);
     
 }
