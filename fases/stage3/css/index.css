@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#cenario{
+    margin-top: 20%;
+    position: relative;
+   
+}
+#background{
+    flex-shrink: 0;
+}
+
+#img-scorpion{
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top: 130px;
+    left: 350px;
+}
+
+#img-ermac{
+    opacity: 0%;
+    width: 130px;
+    height: 165px;
+    position: absolute;
+    top: 90px;
+    right: 340px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: 1s all;
+}
+
+#img-subzero{
+    transition: 1s all;
+    opacity: 0%;
+    width: 100px;
+    height: 134px;
+    position: absolute;
+    top: 125px;
+    right: 420px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#zombie{
+    opacity: 0%;
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top: 130px;
+    right: 220px;
+    transition: 1s all;
+}
+
+.round1{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 70px;
+    left: 600px;
+}

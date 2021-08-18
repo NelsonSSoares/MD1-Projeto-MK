@@ -24,8 +24,8 @@ function scorpionWins(){
 
     setTimeout(() => {
         scorpion.play()
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
         wins.play()
-    }, 2300);
+    }, 3300);
 }

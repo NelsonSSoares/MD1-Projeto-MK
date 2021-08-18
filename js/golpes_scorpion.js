@@ -6,13 +6,13 @@ function soco(){
     scorpion.style.transform = 'scale(1.5)';
     setTimeout(() => {
         soco1.play();
-    }, 600);
+    }, 700);
     setTimeout(() => {
         soco2.play();
-    }, 800);
+    }, 900);
     setTimeout(() => {
         soco1.play();
-    }, 1000);
+    }, 1100);
     vidaZombie(35)
     setTimeout(() => {
         scorpion.style.transform = 'scale(1)';

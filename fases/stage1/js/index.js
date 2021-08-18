@@ -116,7 +116,7 @@ function scorpionBattle(){
 
             escolhaGolpe(comando);
 
-        }, 2000);
+        }, 4000);
         
         setTimeout(() => {
             comando = prompt(`Escolha um Golpe pelo Numero:
@@ -125,7 +125,7 @@ function scorpionBattle(){
             3- Machadada
             4- Corda`);
             escolhaGolpe(comando)
-        }, 6000);
+        }, 8000);
         
         setTimeout(() => {
             comando = confirm('Zombie: grrr tsc voces.. nun.. ganhaar');
