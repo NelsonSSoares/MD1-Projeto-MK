@@ -38,9 +38,9 @@ function batalha(){
     setTimeout(() => {
         alert('Zombie: Grrr');
         alert('Ermac: hã?');
+        alert('Subzero: A invasão ja começou!');
         document.getElementById('img-ermac').style.transform ='scaleX(1)';
         document.getElementById('img-subzero').style.transform = 'scaleX(1)';
-        alert('Subzero: A invasão ja começou!');
         levitar()
         
     }, 1500);
