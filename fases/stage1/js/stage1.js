@@ -16,6 +16,20 @@ function aparecer(){
     }, 2500);
 }
 
+function desaparecer(){
+    document.getElementById('img-ermac').src = '../../img/personagens/ermac/levitar.gif';
+    let ermac = document.getElementById('img-ermac');
+    let subzero = document.getElementById('img-subzero');
+
+    ermac.style.width = '130px';
+    ermac.style.height = '165px';
+    ermac.style.top = '60px';
+    ermac.style.transition = '1s all';
+    subzero.style.transition = '1s all';
+    ermac.style.opacity = '0%';
+    subzero.style.opacity = '0%';
+}
+
 function spawnzombie(){
     let cenario = document.getElementById('cenario');
     let divzombie = document.createElement('div');
@@ -42,7 +56,20 @@ function batalha(){
         document.getElementById('img-ermac').style.transform ='scaleX(1)';
         document.getElementById('img-subzero').style.transform = 'scaleX(1)';
         levitar()
-        
+        setTimeout(() => {
+            document.getElementById('img-ermac').style.transform ='scaleX(-1)';
+            document.getElementById('img-subzero').style.transform = 'scaleX(-1)';
+            var aceite = confirm('Scorpion: ERMAC!! Do meu reino eu cuido.. \n vá com Subzero defeder o plano terreno! \n Encontro vocês depois!');
+            if(aceite == true || aceite == false){
+                setTimeout(() => {
+                 spawnzombie();
+                 desaparecer();
+                }, 3000);
+             }
+             alert('Subzero: Vamos Ermac..!!');
+
+        }, 2000);
+      
     }, 1500);
     
 }
