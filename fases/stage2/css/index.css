@@ -1,5 +1,6 @@
 body{
     background-color: black;
+
 }
 
 main{
@@ -13,45 +14,58 @@ main{
     position: relative;
    
 }
-#background{
-    flex-shrink: 0;
-}
+#background,#background1,#background2{
+    flex-shrink: 1;
+    position: absolute;
 
+}
+#background{
+    right: 300px;
+    top: 280px;
+}
+#background1{
+    top: 280px;
+    right: -96px;
+}
+#background2{
+    left: 97px;
+    top: 280px;
+}
 #img-scorpion{
     width: 80px;
     height: 120px;
     position: absolute;
-    top: 130px;
-    left: 350px;
+    top: 390px;
+    left: -220px;
 }
-
-#img-ermac{
-    opacity: 0%;
-    width: 130px;
-    height: 165px;
-    position: absolute;
-    top: 90px;
-    right: 340px;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    transition: 1s all;
-}
-
 #img-subzero{
     transition: 1s all;
-    opacity: 0%;
+    opacity: 100%;
     width: 100px;
     height: 134px;
     position: absolute;
-    top: 125px;
-    right: 420px;
+    top: 390px;
+    left: 120px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+#img-ermac{
+    opacity: 100%;
+    width: 100px;
+    height: 125px;
+    position: absolute;
+    top: 390px;
+    left: 100px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transition: 1s all;
+}
+
+
 #zombie{
     opacity: 0%;
     width: 80px;

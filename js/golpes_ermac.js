@@ -20,6 +20,8 @@ function levitar(){
 }
 
 function giratorio(){
-    document.getElementById('img-ermac').src = ''
-    const giratorio = new Audio('');
+    document.getElementById('img-ermac').src = '../../img/personagens/ermac/giratorio.gif'
+    const giratorio = new Audio('../../audios/ermac/golpes/giratorio.mp3');
+    const hitgiratorio = new ('');
+    
 }

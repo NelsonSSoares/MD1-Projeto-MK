@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(gray, darkorange);
+   
+
+}
+
+#avatar{
+    position: absolute;
+    top: 230px;
+    left: 163px;
+    transition: 2.5s all;
+}
+main{
+    display: flex;
+    justify-content: center;
+  
+}
+
+#cenario{
+    position: relative;
+   
+}
+
+
+
+@keyframes avatarscorp {
+    from{
+        position: absolute;
+        top: 347px;
+        left: 163px;
+        opacity: 0%;
+    }
+    to{
+      opacity: 100%;
+    }
+}

@@ -124,8 +124,10 @@ function scorpionBattle(){
             2- Joelhada
             3- Machadada
             4- Corda`);
+
+            
             escolhaGolpe(comando)
-        }, 8000);
+        }, 9000);
         
         setTimeout(() => {
             comando = confirm('Zombie: grrr tsc voces.. nun.. ganhaar');

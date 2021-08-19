@@ -3,19 +3,20 @@ function musica(){
     musica.play();
 
     setTimeout(() => {
-        window.location = '../stage2/index.html'
+        window.location = '../stage3/index.html'
     }, 6000);
-
-    const haha = new Audio('../../audios/system/haha2.mp3');
+    /*
+    const haha = new Audio('../../audios/system/haha.mp3');
     setTimeout(() => {
         haha.play() 
     }, 1000);
-    const laugth = new Audio('../../audios/system/laught.mp3');
+    */
+    const never = new Audio('../../audios/system/never-win.mp3');
     setTimeout(() => {
-        laugth.play()
-    }, 2500);
+        never.play()
+    }, 1900);
 
-    document.getElementById('avatar').style.top = '290px'
+    document.getElementById('avatar').style.top = '230px'
    
 }
 function historia(){

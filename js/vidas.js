@@ -14,18 +14,19 @@ function spawnzombie(){
     divzombie.id = 'divzombie';
     lifezombie = 100;
 }
+
 function vidaPlayer(){
 
     return window.location ='gameover.html'
 }
+
 function vidaZombie(dano){
     const dano1 = new Audio('../../audios/system/dano/danozombie.mp3');
     const morreu = new Audio('../../audios/system/dano/morreuzombie.mp3');
-    let vida = 100;
-
+    
     dano = parseInt(dano)
 
-   if(dano > 0 && vida > 0){
+   if(dano > 0 && lifezombie > 0){
     dano1.play()
     lifezombie = lifezombie - dano;
     console.log(lifezombie)

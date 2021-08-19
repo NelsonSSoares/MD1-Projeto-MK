@@ -19,13 +19,9 @@ function round1(){
 }
 
 function scorpionWins(){
-    const scorpion = new Audio('../../audios/scorpion/nome/nome.mp3');
-    const wins = new Audio('../../audios/system/wins.mp3');
+    const scorpionWins = new Audio('../../audios/scorpion/nome/wins.mp3');
 
     setTimeout(() => {
-        scorpion.play()
+        scorpionWins.play()
     }, 2000);
-    setTimeout(() => {
-        wins.play()
-    }, 3300);
 }
