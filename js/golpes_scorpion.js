@@ -65,7 +65,7 @@ function comeHere(){
     scorpion.style.transform = 'scale(1.3)';
     hitcorda.play();
     let zombie = document.getElementById('zombie');
-    zombie.style.left = '-150px';
+    zombie.style.left = '410px';
     vidaZombie(30)
     setTimeout(() => {
         scorpion.style.transform = 'scale(1)';
