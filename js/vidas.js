@@ -1,5 +1,104 @@
-function vidaPlayer(){
-    return window.location ='gameover.html'
+function vidaPlayerScorpion(comando){
+    const dano = new Audio('../../audios/system/danoplayer/danoplayer.mp3');
+    const morreu = new Audio('../../audios/system/danoplayer/morreuplayer.mp3');
+    const haha = new Audio('../../audios/system/haha4.mp3');
+    const iwin = new Audio('../../audios/system/iwin.mp3');
+    const never = new Audio('../../audios/system/never.mp3');
+    let aleatorio = 0;
+
+    if(comando !== 1 && comando !== 2 && comando !== 3 && comando !== 4){
+        lifePlayer = lifePlayer - 100;
+        let scorpion = document.getElementById('img-scorpion');
+        scorpion.src = '../../img/personagens/scorpion/tonto.gif';
+        morreu.play();
+
+        aleatorio = Math.random();
+
+        setTimeout(() => {
+            if(aleatorio <= 0.3){
+                haha.play();
+            }else if(aleatorio <= 0.6 && aleatorio > 0.3){
+                iwin.play();
+            }else if(aleatorio <= 0.9 && aleatorio > 0.6){
+                never.play();
+            }
+        }, 1200);
+    }
+
+    if(lifePlayer <= 0){
+        setTimeout(() => {
+            return window.location ='gameover.html'
+        }, 6000);
+    }
+    
+}
+function vidaPlayerSubzero(comando){
+    const dano = new Audio('../../audios/system/danoplayer/danoplayer.mp3');
+    const morreu = new Audio('../../audios/system/danoplayer/morreuplayer.mp3');
+    const haha = new Audio('../../audios/system/haha4.mp3');
+    const iwin = new Audio('../../audios/system/iwin.mp3');
+    const never = new Audio('../../audios/system/never.mp3');
+    let aleatorio = 0;
+
+    if(comando !== 1 && comando !== 2 && comando !== 3 && comando !== 4){
+        lifePlayer = lifePlayer - 100;
+        let scorpion = document.getElementById('img-subzero');
+        scorpion.src = '../../img/personagens/subzero/tonto.gif';
+        morreu.play();
+        
+        aleatorio = Math.random();
+
+        setTimeout(() => {
+            if(aleatorio <= 0.3){
+                haha.play();
+            }else if(aleatorio <= 0.6 && aleatorio > 0.3){
+                iwin.play();
+            }else if(aleatorio <= 0.9 && aleatorio > 0.6){
+                never.play();
+            }
+        }, 1200);
+    }
+
+    if(lifePlayer <= 0){
+        setTimeout(() => {
+            return window.location ='gameover.html'
+        }, 6000);
+    }
+    
+}
+function vidaPlayerErmac(comando){
+    const dano = new Audio('../../audios/system/danoplayer/danoplayer.mp3');
+    const morreu = new Audio('../../audios/system/danoplayer/morreuplayer.mp3');
+    const haha = new Audio('../../audios/system/haha4.mp3');
+    const iwin = new Audio('../../audios/system/iwin.mp3');
+    const never = new Audio('../../audios/system/never.mp3');
+    let aleatorio = 0;
+
+    if(comando !== 1 && comando !== 2 && comando !== 3 && comando !== 4){
+        lifePlayer = lifePlayer - 100;
+        let scorpion = document.getElementById('img-ermac');
+        scorpion.src = '../../img/personagens/ermac/tonto.gif';
+        morreu.play();
+        
+        aleatorio = Math.random();
+
+        setTimeout(() => {
+            if(aleatorio <= 0.3){
+                haha.play();
+            }else if(aleatorio <= 0.6 && aleatorio > 0.3){
+                iwin.play();
+            }else if(aleatorio <= 0.9 && aleatorio > 0.6){
+                never.play();
+            }
+        }, 1200);
+    }
+
+    if(lifePlayer <= 0){
+        setTimeout(() => {
+            return window.location ='gameover.html'
+        }, 6000);
+    }
+    
 }
 function spawnzombie(){
     let cenario = document.getElementById('cenario');
@@ -123,7 +222,7 @@ function vidaZombie2(dano){
     }, 300);
    }
 
-    if(lifezombie <= 0){
+    if(lifezombie2 <= 0){
        
         document.getElementById('zombie2').src = '../../img/personagens/zombie/dano.gif'   
        setTimeout(() => {
