@@ -25,11 +25,11 @@ function machadada(){
     const machadada = new Audio('../../audios/scorpion/golpes/machadada.mp3');
     let scorpion = document.getElementById('img-scorpion');
     scorpion.style.transform = 'scale(1.6)';
-    scorpion.style.top = '365px'
+    scorpion.style.top = '100px'
     machadada.play()
     vidaZombie(50)
     setTimeout(() => {
-        scorpion.style.top = '380px'
+        scorpion.style.top = '130px'
         scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 1000);
@@ -65,9 +65,11 @@ function comeHere(){
     scorpion.style.transform = 'scale(1.3)';
     hitcorda.play();
     let zombie = document.getElementById('zombie');
+    zombie.style.transition = '1s all'
     zombie.style.left = '410px';
     vidaZombie(30)
     setTimeout(() => {
+        zombie.style.transition = '0s all'
         scorpion.style.transform = 'scale(1)';
         return document.getElementById('img-scorpion').src = '../../img/personagens/scorpion/fighter.gif';
     }, 1800);
